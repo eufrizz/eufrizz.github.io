@@ -12,8 +12,9 @@ layout: default
           <p class="post_date">{{ post.date | date: "%B %e, %Y" }}</p>
         </div>
       </a>
-      <div class="entry">
-        {{ post.excerpt }}
+      <div class="preview">
+        <img src="{{ post.preview-image}}">
+        <p> {{ post.excerpt }} </p>
       </div>
 
       <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>

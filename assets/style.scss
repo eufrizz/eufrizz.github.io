@@ -135,6 +135,18 @@ table tr td :last-child {
     line-height: 0.75em;
 }*/
 
+.preview {
+  p {
+    font-size: 0.8em
+  }
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+  }
+}
+
 #search-container {
   text-align: center;
 }
@@ -314,7 +326,7 @@ p > img {
   font-family: $helveticaNeue;
   font-weight: 300;
   font-size: 28px;
-  letter-spacing: 1px;
+  // letter-spacing: 1px;
   text-align: left;
 
   @include mobile {
@@ -349,7 +361,7 @@ nav {
     margin-left: 20px;
     color: $darkGray;
     text-align: right;
-    font-weight: 300;
+    font-weight: 250;
     letter-spacing: 1px;
 
     @include mobile {
@@ -399,7 +411,7 @@ nav {
   }
 
   .read-more {
-    text-transform: uppercase;
+    // text-transform: uppercase;
     font-size: 15px;
   }
 }
