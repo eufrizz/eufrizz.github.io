@@ -58,7 +58,7 @@ Robots and artificial intelligence are popping up in more places than ever befor
 <div class="caption"> Some robots that have gained widespread attention or use. Click to find out more.</div>
 
 
-## Mechanical
+### Mechanical
 
 The mechanical issues in underwater robotics stem fundamentally from the fact that water and electronics don’t mix. Most robots have a “brain”, or central computer, that connects to external sensors (e.g. cameras) and actuators (e.g. motors), enabling interaction with its environment. As you will know from spilling liquids on your laptop or dropping your phone into the ocean, water, and especially salt water, destroy circuit boards.
 
@@ -97,7 +97,7 @@ Aside from the R&D needed to attain a watertight robot, the requirement for wate
 
 Reliability is also impacted by being in a marine environment, due to the highly corrosive effects of saltwater on metal. Anodised aluminium and polymers/plastics are common material choices that stand up to corrosion, but sometimes they are not suitable. Motors are a good example - they require magnets to operate, which are iron-based and highly susceptible to corrosion. The bearings are also typically made of hardened steel, and these seize up with prolonged exposure to saltwater. Galvanic corrosion is also a big issue, where two different metals in the presence of saltwater will create an electrical current, causing one to dissolve at an accelerated rate. Stray voltages from the electronics connected to any metal enclosure will also cause electrolysis of the metal in saltwater. Thus, careful and often more expensive design choices need to be made to prevent corrosion, often in combination with maintenance like rinsing in freshwater and applying anti-corrosion lubricants.
 
-## Localisation and autonomy
+### Localisation and autonomy
 
 <!-- ![Video]({{page.assets}}/murky_h5.mp4) -->
 <div style="text-align: center;">
@@ -164,7 +164,7 @@ Interesting quirks of underwater robotics also come from the dynamics of moving 
 
 Inertial/magnetic sensors are the last type of sensor we’ll cover, and their use is widespread. Accelerometers, gyroscopes and magnetometers allow the robot to know which way is up, how they are rotating, and how they are oriented relative to the north pole. They are an invaluable backup when other sensor modalities fail due to the challenging conditions, and allow for “[dead reckoning](https://en.wikipedia.org/wiki/Dead_reckoning#Autonomous_navigation_in_robotics)” to maintain stability and approximate positioning for a short period of time. Inertial measurement units (IMUs) can range from very small, inaccurate and cheap (on the order of dollars) consumer products, to large, accurate and expensive (on the order of hundreds of thousands of dollars), restricted to military and space applications like missiles - or anywhere in between. At a consumer price point, their usefulness for navigation alone is limited to a few seconds, but they do provide an accurate and high-frequency measurement of the robot’s orientation (roll/pitch/yaw) which is crucial for control.
 
-## Communications
+### Communications
 
 <div style="display: block; text-align:center;">
 <img src="https://www.teledynemarine.com/en-us/products/PublishingImages/UCM_OEM_UCT.jpg" style="width: 20%">
@@ -176,7 +176,7 @@ Inertial/magnetic sensors are the last type of sensor we’ll cover, and their u
 
 Communications is also a unique frontier for the underwater space, to due the absorption of radio waves. WiFi drops out in the first few centimetres. The solution for wireless communication is an acoustic modem, which uses ultrasound to broadcast a signal. However, these are limited to very low bandwidth, on the order of ~10 kbps - incapable of a video stream. They also cost [thousands](https://waterlinked.com/shop/modem-m16-186#attr=159), and have higher latency due to the slow speed of sound (1481m/s in water). Compare this to the [DJI FPV system](https://www.dji.com/dji-fpv/specs), which can do up to 120Mbps in air - a whopping 1000x difference. Thus, underwater robots must either do their work autonomously without the need for high bandwidth communication, or they must be tethered, i.e. they are connected to the operator by a wire for high speed data. A tether requires careful management to prevent it getting wrapped around objects, or sliced by nearby boats, but it also provides a very convenient way to retrieve your robot if it fails (which, in robotics, is common).
 
-## Business
+### Business
 
 <div style="display: block; text-align:center;">
 <img src="https://www.superyachtservicesguide.com/uploads/assets/listings/Sydney%20Superyacht%20Marina/2-Sydney%20Superyacht%20Marina-Callisto%20aerial%20photo%20with%20crane%20and%20fuel.jpeg" style="width: 45%">
@@ -197,4 +197,7 @@ The general population is also much less aware of marine issues, meaning that ta
 
 Those who know that biofouling exists are already a small population, those who know its impacts are a small niche, and those who are trying to solve it (e.g. [Hullbot](https://www.hullbot.com)) are an incredibly small niche for such an important problem. There is also a lack of data and research on many of the issues. With far less exposure, there is less money and therefore less talent and effort going into solving marine issues because of the lack of awareness. And indeed this applies more generally to environmental issues. It makes you think whether the huge amount of effort going into home cleaning robots, could be much better applied to saving the environment.
 
-This is beginning to feel like a rant, so in the interests of brevity I’ll finish up here. I hope you’ve gained some insights into the unique challenges surrounding marine robotics. I think it is a frontier with huge potential impact, and a slew of difficult and interesting challenges. Whether your talents be in mechanical engineering, design, production, perception, autonomy, business development, raising awareness, or investment, it’s an industry that could really do with your input, so I encourage you to dive in!
+### Conclusion 
+If you've made it this far, I hope you’ve gained some insights into the unique challenges surrounding marine robotics. It is a frontier with huge potential, and a slew of difficult and interesting challenges, technical and otherwise. Whether your talents be in mechanical engineering, design, production, perception, autonomy, business development, raising awareness, or investment, it’s a space where you could have an outsized impact, so I encourage you to dive in!
+
+*Any feedback is welcome! Feel free to shoot me an email using the button at the bottom of the page.*
