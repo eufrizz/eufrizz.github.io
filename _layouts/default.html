@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.title }} – {{ site.description }}</title>
+    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.title }}</title>
     {% seo title=false %}
     {% include meta.html %}
 
@@ -11,7 +11,7 @@
 
     <meta name="theme-color" content="#000000">
     <link rel="icon" type="image/jpg" sizes="32x32" href="{{ site.baseurl }}/assets/images/headshot-32x32.jpg">
-    <!-- <link rel="apple-touch-icon" href="{{ site.baseurl }}/assets/images/headshot-32x32.jpg"> -->
+    <link rel="apple-touch-icon" href="{{ site.baseurl }}/assets/images/headshot-32x32.jpg">
     {% include analytics_head.html %}
   </head>
 

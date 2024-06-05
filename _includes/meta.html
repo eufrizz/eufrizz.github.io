@@ -4,10 +4,13 @@
 
 {% if page.excerpt %}
 <meta property="og:description" content="{{ page.excerpt| strip_html }}" />
+<meta property="twitter:description" content="{{ page.excerpt| strip_html }}" />
 {% else if page.description %}
 <meta property="og:description" content="{{ page.description }}" />
+<meta property="twitter:description" content="{{ page.description }}" />
 {% else %}
 <meta property="og:description" content="{{ site.description }}" />
+<meta property="twitter:description" content="{{ site.description }}" />
 {% endif %}
 <meta name="author" content="{{ site.title }}" />
 
@@ -16,10 +19,12 @@
 <meta property="twitter:title" content="{{ page.title }}" />
 {% endif %}
 
-{% if page.image %}
-<meta property="og:image" content="{{ site.url }}{{ page.image }}"/>
-<meta property="twitter:image" content="{{ site.url }}{{ page.image }}"/>
+{% if page.preview-image %}
+<meta property="og:image" content="{{ site.url }}{{ page.preview-image }}"/>
+<meta property="twitter:image" content="{{ site.url }}{{ page.preview-image }}"/>
 {% else %}
 <meta property="og:image" content="{{ site.url }}{{ site.avatar }}"/>
 <meta property="twitter:image" content="{{ site.url }}{{ site.avatar }}"/>
 {% endif %}
+
+<meta name="twitter:site" content="{{ site.footer-links.twitter }}" />
