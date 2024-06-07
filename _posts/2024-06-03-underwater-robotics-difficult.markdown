@@ -33,7 +33,7 @@ preview-image: "/assets/images/underwater-robots/hullbot_under_hull.png"
 
 
 
-Robots and artificial intelligence are popping up in more places than ever before - in drones, as self-driving cars, as vacuum cleaners, in factory production lines. But one medium has gained significantly less attention: marine robots. On the surface (no pun intended), making an underwater robot would seem as challenging as any other area, but it does in fact come with its own unique set of technical challenges that make it surprisingly difficult. These fall roughly into four categories: mechanical, localisation, communication and business. Any company in the area is acutely aware of these issues, and how they choose to tackle them defines the product. And by tackling them, they begin to unlock the vast potential of exploration and utilisation of 71% of the earth’s surface.
+Robots and artificial intelligence are popping up in more places than ever before - in drones, as self-driving cars, as vacuum cleaners, in factory production lines. But one medium has gained significantly less attention: marine robots. On the surface (no pun intended), making an underwater robot would seem as challenging as any other area, but it does in fact come with its own unique set of technical challenges that make it surprisingly difficult. These fall roughly into four categories: mechanical, autonomy, communication and business. Any company in the area is acutely aware of these issues, and how they choose to tackle them defines the product. And by tackling them, they begin to unlock the vast potential of exploration and utilisation of 71% of the earth’s surface.
 
 <div class="six-image-grid">
     <a href="https://www.skydio.com" target="_blank">
@@ -57,6 +57,7 @@ Robots and artificial intelligence are popping up in more places than ever befor
 </div>
 <div class="caption"> Some robots that have gained widespread attention or use. Click to find out more.</div>
 
+It may help to first give an overview of the broad range of environments and applications in the space. We can start with surface vehicles, which are basically autonomous boats, powered or sailing, which often survey large bodies of water, or transport passengers and cargo. Underwater robots tend to be either shallow - for operating in coastal areas, on reefs or on boats - or deep sea, for inspecting, maintaining or creating deep sea cables or drilling. The common environmental challenges are the harsh conditions, where water, wind, waves, currents and pressure make it difficult to survive and are highly variable. 
 
 ### Mechanical
 
@@ -70,7 +71,7 @@ There are two common ways to waterproof electronics - by coating them in a subst
 </div>
 <div class="caption"> Potting on the left, conformal coating on the right. Conformal coating tends to be less heavy duty and unsuited to prolonged immersion.</div>
 
-Now, that may seem like problem solved, but water is in fact a sneaky son of a bitch that will do anything to permeate what you once presumed were your impenetrable defences. Your potting will be compromised by the wrong match of potting material and surface to bind to, bad surface preparation, air bubbles, curing, sneaky corners you forget to fill, movement, wicking through wires, and on and on. You then may only find out about it a month later, when after continued immersion your electronics start to mysteriously misbehave due the tiniest, slowest leak that has finally managed to wrangle its way in. If you’re lucky, you then realise you have a design flaw, and you can chuck out the batch of parts you potted that time because the rest of them will eventually fail in the same way, and try fix the issue for the next iteration. Most of the time, you don’t even realise the issue is due to water ingress and you go off blaming the electronics, or you suspect water but you’re stuck not being able to diagnose it because all you’ve got is a lump of goo that you can’t see into.
+Now, that may seem like problem solved, but water is in fact a cunning enemy that will do anything to permeate what you once presumed were your impenetrable defences. Your potting will be compromised by the wrong match of potting material and surface to bind to, bad surface preparation, air bubbles, curing, sneaky corners you forget to fill, movement, wicking through wires, and on and on. You then may only find out about it a month later, when after continued immersion your electronics start to mysteriously misbehave due the tiniest, slowest leak that has finally managed to wrangle its way in. If you’re lucky, you then realise you have a design flaw, and you can chuck out the batch of parts you potted that time because the rest of them will eventually fail in the same way, and try fix the issue for the next iteration. Most of the time, you don’t even realise the issue is due to water ingress and you go off blaming the electronics, or you suspect water but you’re stuck not being able to diagnose it because all you’ve got is a lump of goo that you can’t see into.
 
 An enclosure, usually sealed with a gasket or O-ring, tends to be a bit more forgiving in diagnosing and fixing leaks because you can pull it apart and see where the water is getting in. You can immersion test enclosures thoroughly before putting your expensive electronics in, simply checking for water ingress after a period of sustained immersion, or using a moisture detector. Pressure testing can also be done by pressurising or vacuuming the enclosure, and tracking the change in pressure over time with a sensor - this is probably the most robust technique for checking for leaks.
 
@@ -97,7 +98,7 @@ Aside from the R&D needed to attain a watertight robot, the requirement for wate
 
 Reliability is also impacted by being in a marine environment, due to the highly corrosive effects of saltwater on metal. Anodised aluminium and polymers/plastics are common material choices that stand up to corrosion, but sometimes they are not suitable. Motors are a good example - they require magnets to operate, which are iron-based and highly susceptible to corrosion. The bearings are also typically made of hardened steel, and these seize up with prolonged exposure to saltwater. Galvanic corrosion is also a big issue, where two different metals in the presence of saltwater will create an electrical current, causing one to dissolve at an accelerated rate. Stray voltages from the electronics connected to any metal enclosure will also cause electrolysis of the metal in saltwater. Thus, careful and often more expensive design choices need to be made to prevent corrosion, often in combination with maintenance like rinsing in freshwater and applying anti-corrosion lubricants.
 
-### Localisation and autonomy
+### Autonomy (localisation and navigation)
 
 <!-- ![Video]({{page.assets}}/murky_h5.mp4) -->
 <div style="text-align: center;">
@@ -189,7 +190,9 @@ Communications is also a unique frontier for the underwater space, to due the ab
 
 Running a business around water incurs increased operational costs. Real estate next to a body of water is more sought after and more expensive, increasing the cost of your rent. Often, a boat will also be required (depending on the application), and boats are not cheap to buy, maintain or park.
 
-The general population is also much less aware of marine issues, meaning that takes more effort and education to get people to understand the problem you’re trying to solve, and convince them it’s worth investing in or working on. Take, for example, the issue of hull biofouling, where organisms like slime and barnacles grow quickly on ship hulls. It has three major issues:
+The challenges of operating in the space has meant that the robotics revolution is occurring more slowly. The standard for capability, safety and reliability is high due to progress in the land and air domains, yet the state of the art here lags behind, putting larger pressures on businesses to meet expectations. 
+
+The general population is much less aware of marine issues, meaning that takes more effort and education to get people to understand the problem you’re trying to solve, and convince them it’s worth investing in or working on. Take, for example, the issue of hull biofouling, where organisms like slime and barnacles grow quickly on ship hulls. It has three major issues:
 
 - **Emissions:** The shipping industry accounts for over [3% of global emissions](https://safety4sea.com/wp-content/uploads/2021/11/IMO-Biofouling-report-2021_11.pdf), and the fuel burnt just due to drag from these organisms across the whole industry has been estimated as on par with the “[total annual CO2 emissions of a country such as Greece, Nigeria or the Philippines](https://www.glofouling.imo.org/ghg-emissions)”, and quite possibly more since that estimate.
 - **Invasive species:** Biofouling also causes the transfer of invasive species between marine environments, and is “[considered to be one of the greatest threats to the world’s freshwater, coastal and marine ecosystems](https://www.glofouling.imo.org/the-issue)”.
