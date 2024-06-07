@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[DRAFT] Why is underwater robotics so difficult?"
+title:  "Why is underwater robotics so difficult?"
 date:   2024-06-03 14:20:24 +0
 categories: robotics marine underwater
 comments: true
