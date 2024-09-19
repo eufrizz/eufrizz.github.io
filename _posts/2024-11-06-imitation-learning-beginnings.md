@@ -4,9 +4,9 @@ title:  "First forays into imitation learning for robotic manipulation"
 date:   2024-09-06 12:00:00 +10
 categories: robotics arm mujoco manipulation trajectory imitation learning deep neural network
 comments: true
-excerpt: Getting into imitation learning from the basics.
+excerpt: The trials and tribulations of getting imitation learning for robotic manupulation working from basics.
 assets: /assets/images/imitation-learning-beginnings/
-preview-image: ""
+preview-image: "/assets/images/imitation-learning-beginnings/imitiation_learning_beginnings.png"
 ---
 # Why imitation learning?
 Deep learning is pushing forward the frontier of tasks possible with robotic arms, making previously impossible tasks, like folding shirts or tying shoelaces, possible. Manipulation tasks are very difficult to model due to the complexity of contact forces, deformable objects, and visual appearance in the real world, which is why learning based methods, which can implicitly learn these models from lots of data, are giving state of the art results. Imitiation learning (IL), where the model learns from expert demonstrations of a task, and reinforcement learning (RL), where the model explores by trial and error, are techniques that have both had success. Imitiation learning tends to be the dominant approach, as the expert demonstrations can much more quickly and efficiently get the model to learn desired behaviour, and reward functions can be very complex to define by hand, especially as tasks get more sophisticated.
