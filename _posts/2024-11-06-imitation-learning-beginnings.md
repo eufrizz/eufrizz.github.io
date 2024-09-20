@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  "First forays into imitation learning for robotic manipulation"
+title:  "A first attempt at imitation learning for robotic manipulation from scratch"
 date:   2024-09-06 12:00:00 +10
 categories: robotics arm mujoco manipulation trajectory imitation learning deep neural network
 comments: true
-excerpt: The trials and tribulations of getting imitation learning for robotic manupulation working from basics.
+excerpt: I created a basic imitation learning policy from the ground up to see what it could learn. Spoiler: not much.
 assets: /assets/images/imitation-learning-beginnings/
 preview-image: "/assets/images/imitation-learning-beginnings/imitiation_learning_beginnings.png"
 ---
