@@ -4,7 +4,7 @@ title:  "A first attempt at imitation learning for robotic manipulation from scr
 date:   2024-09-06 12:00:00 +10
 categories: robotics arm mujoco manipulation trajectory imitation learning deep neural network
 comments: true
-excerpt: I created a basic imitation learning policy from the ground up to see what it could learn. Spoiler: not much.
+excerpt: I created a basic imitation learning policy from the ground up to see what it could learn. Spoiler - not much.
 assets: /assets/images/imitation-learning-beginnings/
 preview-image: "/assets/images/imitation-learning-beginnings/imitiation_learning_beginnings.png"
 ---
