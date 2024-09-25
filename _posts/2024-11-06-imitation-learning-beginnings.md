@@ -281,7 +281,7 @@ Overall, the model was able to learn a single policy ok, but extrapolating beyon
 
 Upon inspection, the data seems good, with clear visual features, a contrasting background, and success in open loop replays. However, it is still possible that good visual features are not being learned. Perhaps some self-supervised learning/fine-tuning (e.g. [BYOL](https://arxiv.org/abs/2006.07733)) on the vision encoder would help.
 
-I don't think MLP-MSE is the wrong approach, as it has found moderate success in previous papers like [BC-Z (Jang, Irpan)](https://arxiv.org/abs/2202.02005). It seems the data is fairly unimodal - just move directly to the block and grasp. There are not fundamentally different techniques employed or steps executed in different orders. However, I do notice behaviour where the arm seems to default to going down and to the right, so perhaps it is not being well conditioned on the goal or observations.
+I don't think MLP-MSE is the wrong approach, as it has found moderate success in previous papers like [BC-Z (Jang, Irpan)](https://arxiv.org/abs/2202.02005). The approach is definitely limited when it comes to multimodal data, but it seems the data is fairly unimodal - just move directly to the block and grasp. There are not fundamentally different methods ways of doing this in the data, or steps executed in different orders. However, I do often notice behaviour where the arm seems to default to going down and to the right, which makes it seem like it may be just learning the average of all the data. Perhaps it is not being well conditioned on the goal or observations.
 
 The model also learns and predicts based on the observations at a single time step. Because a successful trajectory involves stringing together a coherent sequence of individual actions, it may benefit from being trained on/acting on a sequence of observations. This is a crucial part of state of the art approaches like [ACT](https://tonyzhaozh.github.io/aloha/), and [Diffusion](https://diffusion-policy.cs.columbia.edu). This could conceivably be done by feeding the model the previous _n_ observations at a time, or by using a sequential model like an LSTM or transformer.
 
@@ -363,6 +363,27 @@ Here are some samples:
         Your browser does not support the video tag.
         </video>
         <div class="caption">60 epochs</div>
+    </div>
+</div>
+
+### Velocity Observations
+
+I added joint velocities to the observation space, to see if some information about the relative motion of the arm was useful. I tried it on a 64x64x64 MLP and a 64^5 MLP, and all I got for both was chaos:
+
+<div style="display: flex">
+    <div style="margin: 2px;text-align: center;">
+        <video autoplay loop controls playsinline>
+        <source src="{{ page.assets }}vel/vel_64_3_epoch_20_fixed.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+        </video>
+        <div class="caption">64^3 MLP, 20 epochs</div>
+    </div>
+    <div style="margin: 2px;text-align: center;">
+        <video autoplay loop controls playsinline>
+        <source src="{{ page.assets }}vel/vel_64_5_epoch_64_fixed.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+        </video>
+        <div class="caption">64^5 MLP, 64 epochs</div>
     </div>
 </div>
 
