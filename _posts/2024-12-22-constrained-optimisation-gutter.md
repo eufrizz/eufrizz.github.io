@@ -109,10 +109,10 @@ SciPy has 4 options for constrained minimisation, `SLSQP`, `COBYLA`, `trust-cons
 But here are some nice videos of `SLSQP` converging on a couple of different solutions.
 
 <div style="text-align: center;">
-<video width="45%" controls loop playsinline autoplay>
+<video width="90%" controls loop playsinline autoplay>
   <source src="{{page.assets}}slsqp-k1.mp4" type="video/mp4">
 </video>
-<video width="45%" controls loop playsinline autoplay>
+<video width="90%" controls loop playsinline autoplay>
   <source src="{{page.assets}}slsqp-k2.mp4" type="video/mp4">
 </video>
 </div>
@@ -138,13 +138,13 @@ In this case, the solvers found in the [mystic](https://mystic.readthedocs.io/en
 Here's a plot of the solution, for different numbers of cuts. With k=0 cuts the error is $243,105px^2$, with k=1, $8857px^2$, and with k=2, $2280px^2$, so we get a better fitting curve with more cuts, as expected. Converting to real units from pixels is a simple matter of measuring the length of guttering in real life. 1 cut looks like the way to go for me! 
 
 <div style="text-align: center;">
-    <img src="{{page.assets}}/result-k0.png" style="width: 70%">
+    <img src="{{page.assets}}/result-k0.png" style="width: 80%">
 </div>
 <div style="text-align: center;">
-    <img src="{{page.assets}}/result-k1.png" style="width: 70%">
+    <img src="{{page.assets}}/result-k1.png" style="width: 80%">
 </div>
 <div style="text-align: center;">
-    <img src="{{page.assets}}/result-k2.png" style="width: 70%">
+    <img src="{{page.assets}}/result-k2.png" style="width: 80%">
 </div>
 <div style="text-align: center;" class="caption"> Results for k=0, k=1, k=2. </div>
 
