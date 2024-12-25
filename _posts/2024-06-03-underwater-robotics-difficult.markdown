@@ -17,15 +17,15 @@ preview-image: "/assets/images/underwater-robots/hullbot_under_hull.png"
         <img src="{{page.assets}}/hullbot.jpg" alt="Hullbot underwater robot" title="Hullbot" style="width:100%" >
     </a>
     <a href="https://bluerobotics.com" target="_blank">
-        <img src="https://bluerobotics.com/wp-content/uploads/2016/06/BlueROV2.jpg" alt="Blue robotics ROV" title="BlueRobotics BlueROV2" style="width:100%" >
+        <img src="{{page.assets}}BlueROV2.jpg" alt="Blue robotics ROV" title="BlueRobotics BlueROV2" style="width:100%" >
     </a>
   </div>
   <div style="flex: 50%; padding: 4px; overflow:hidden">
     <a href="https://www.anduril.com" target="_blank">
-        <img src="https://images.marinetechnologynews.com/images/maritime/w800h500/photo-courtesy-anduril-133545.jpg" alt="Anduril Ghost Shark XLUUV" title="Anduril Ghost Shark"  style="width:100%">
+        <img src="{{page.assets}}photo-courtesy-anduril-133545.jpg" alt="Anduril Ghost Shark XLUUV" title="Anduril Ghost Shark"  style="width:100%">
     </a>
     <a href="https://www.ifremer.fr/fr/flotte-oceanographique-francaise/decouvrez-les-navires-de-la-flotte-oceanographique-francaise/victor-6000" target="_blank">
-        <img src="https://data.ibtimes.sg/en/full/68424/victor-6000.jpg?w=736" alt="Victor 6000" title="Ifremer Victor 6000" style="width:100%">
+        <img src="{{page.assets}}victor-6000.jpg" alt="Victor 6000" title="Ifremer Victor 6000" style="width:100%">
     </a>
   </div>
 </div>
@@ -37,22 +37,22 @@ Robots and artificial intelligence are popping up in more places than ever befor
 
 <div class="six-image-grid">
     <a href="https://www.skydio.com" target="_blank">
-        <img src="https://cdn.sanity.io/images/mgxz50fq/production-v2/fe2471c594d6333e77433bc6c5dc6fc28aab4172-1920x1095.jpg?w=1920&h=1095&auto=format" alt="Skydio drone" title="Skydio UAV">
+        <img src="{{page.assets}}skydio.jpeg" alt="Skydio drone" title="Skydio UAV">
     </a>
     <a href="https://covariant.ai" target="_blank">
-        <img src="https://www.materialhandling247.com/images/2021_images/MH247_Covarient_inline3_800p.png" alt="Covariant arm" title="Covariant factory arm">
+        <img src="{{page.assets}}MH247_Covarient_inline3_800p.png" alt="Covariant arm" title="Covariant factory arm">
     </a>
     <a href="https://waymo.com" target="_blank">
-        <img src="https://images.ctfassets.net/e6t5diu0txbw/4rGbzVdkyNAnPEoqFyVpdx/b36b99fa83e9f6b662b3be4ae8516826/Waymo_SF.jpg" alt="Waymo self-driving car" title="Waymo self-driving car">
+        <img src="{{page.assets}}Waymo_SF.jpg" alt="Waymo self-driving car" title="Waymo self-driving car">
     </a>
     <a href="https://www.figure.ai" target="_blank">
-        <img src="https://techstory.in/wp-content/uploads/2024/03/Jeff-Bezos-Nvidia-join-OpenAI-in-funding-humanoid-robot-startup-Figure-AI.webp" alt="Figure humanoid robot" title="Figure AI humanoid">
+        <img src="{{page.assets}}Jeff-Bezos-Nvidia-join-OpenAI-in-funding-humanoid-robot-startup-Figure-AI.webp" alt="Figure humanoid robot" title="Figure AI humanoid">
     </a>
     <a href="https://maticrobots.com" target="_blank">
         <img src="{{ page.assets }}/Matic.jpg" alt="Matic robot vacuum" title="Matic robot vacuum">
     </a>
     <a href="https://bostondynamics.com" target="_blank">
-        <img src="https://bostondynamics.com/wp-content/uploads/2023/06/spot-charging-dock-industrial-min.jpg" alt="Boston Dynamics spot robot dog" title="Boston Dynamics Spot">
+        <img src="{{page.assets}}spot-charging-dock-industrial-min.jpg" alt="Boston Dynamics spot robot dog" title="Boston Dynamics Spot">
     </a>
 </div>
 <div class="caption"> Some robots that have gained widespread attention or use. Click to find out more.</div>
@@ -66,8 +66,8 @@ The mechanical issues in underwater robotics stem fundamentally from the fact th
 There are two common ways to waterproof electronics - by coating them in a substance like epoxy or silicone - “potting” or “conformal coating” - or placing them in a watertight enclosure. Potting can be super simple - just smother the electronics in epoxy - but there’s no going back and taking it off for maintenance or repair, so it’s not a great choice in the development stage, or for expensive, complex parts. On the other hand, watertight enclosures give you the flexibility of accessing the parts inside, but come at a higher cost as the enclosures require development and production. A good compromise is to buy an off the shelf enclosure, like the popular ones from [BlueRobotics](https://bluerobotics.com/product-category/watertight-enclosures/locking-series/).
 
 <div style="display: block; text-align:center;">
-<img src="http://aptelectronics.co.uk/images/Potting-Compound.jpg" style="width:28%; padding: 4px">
-<img src="https://www.conro.com/wp-content/uploads/2021/08/conformal-coating-types.jpg" style="width:40%; padding: 4px">
+<img src="{{page.assets}}Potting-Compound.jpg" style="width:28%; padding: 4px">
+<img src="{{page.assets}}Conformal-Coating-3822222336.jpg" style="width:40%; padding: 4px">
 </div>
 <div class="caption"> Potting on the left, conformal coating on the right. Conformal coating tends to be less heavy duty and unsuited to prolonged immersion.</div>
 
@@ -78,7 +78,7 @@ An enclosure, usually sealed with a gasket or O-ring, tends to be a bit more for
 If you discover that your enclosure is leaky, you then need to pinpoint where it is occurring. Enclosures usually have a number of ports that provide connections to external electronics - think motors, sensors that require specific positioning, or a data cable to the operator on the surface. These external devices and their cables all need to be watertight too, or you’ll end up with water entering the device, then wicking its way down the cables and into the main enclosure.  Something as simple as a cut on a cable can spell a major leak. A complex robot with more external devices means more points of failure, and more difficulty in diagnosing a leak.
 
 <div style="display: block; text-align:center;">
-<img src="https://www.roboticocean.com/wp-content/uploads/2019/05/DSC1702_-scaled.jpg" style="width: 60%">
+<img src="{{page.assets}}DSC1702_-scaled.jpg" style="width: 60%">
 </div>
 <div class="caption"> A typical enclosure for electronics. 5 ports with watertight connectors for electronics are visible. Courtesy of <a href="https://www.roboticocean.com">RoboticOCEAN</a></div>
 
@@ -89,9 +89,9 @@ Another important design factor for an enclosure is water pressure. For every 10
 Aside from the R&D needed to attain a watertight robot, the requirement for watertightness adds inflexibility to the development and design of the robot. On an aerial or terrestrial robot, you can slap on a new sensor or change the position of a camera without much effort, quickly evaluate its effectiveness, and iterate towards an optimal design. However, you can’t simply plug and play with new sensors underwater as they have to integrate into a watertight system. Most sensors or actuators are not watertight off the shelf, and you need a solution for waterproof cabling/connections. All of this increases the time and cost of development. The compromise that most projects settle on is to put as much of the electronics into a central enclosure as possible, and have standardised waterproof connectors to any devices that need to be external to the enclosure, finding a balance between flexibility and cost.
 
 <div style="display: block; text-align:center;">
-<img src="https://www.rotor-magazin.com/wp-content/uploads/2018/08/basis_motoren.jpg" style="width: 35%">
-<img src="http://bearingfailureanalysis.co.uk/assets/faq/16-rust-and-corrosion/thumb/photo-44.jpg" style="width: 25%">
-<img src="http://steelfabservices.com.au/wp-content/uploads/2017/04/Galvanic-corrosion.jpg" style="width: 37%">
+<img src="{{page.assets}}basis_motoren.jpg" style="width: 35%">
+<img src="{{page.assets}}photo-44.jpg" style="width: 25%">
+<img src="{{page.assets}}Galvanic-corrosion.jpg" style="width: 37%">
 
 </div>
 <div class="caption"> Left: brushless motor internals - unfortunately I don't have a photo of a corroded one. Middle: corroded bearing. Right: galvanic ("dissimilar metal") corrosion</div>
@@ -134,8 +134,8 @@ This is not to say that cameras are useless underwater - they are in fact very u
 LiDAR and GPS, the most commonly used above-surface sensors for sensing a robot’s environment, are severely affected underwater. The absorption of radio waves in water (the same reason a microwave oven works) means that GPS doesn’t penetrate water more than a few centimetres. LiDAR suffers from the same issues as a camera, namely light absorption (which can be helped by choosing a laser wavelength in the blue spectrum), and turbidity. Additionally, LiDAR is expensive, and any of the [cheaper units](https://www.robotshop.com/products/rplidar-a1m8-360-degree-laser-scanner-development-kit) for above-surface applications are unsuitable as they use infrared light (which is highly attenuated in water), and their spinning parts are not waterproof. No off the shelf or remotely cheap solutions exist for underwater purposes. The next best thing is a [time of flight (TOF) sensor](https://en.wikipedia.org/wiki/Time-of-flight_camera), which uses a single beam of light to measure distance, traditionally in only one axis, but there are now ones which can create a 2D depth map. However, off the shelf solutions have a short range in the low to mid tens of cm underwater.
 
 <div style="display: block; text-align:center;">
-<img src="https://www.rovplanet.com/tportal_upload/md_weblap_tartalom/pic2_1986.jpg" style="width: 32%">
-<img src="https://bluerobotics.com/wp-content/uploads/2023/07/ACOUSTIC-POSITIONING-SYSTEM-USBL.jpg" style="width: 31%">
+<img src="{{page.assets}}pic2_1986.jpg" style="width: 32%">
+<img src="{{page.assets}}ACOUSTIC-POSITIONING-SYSTEM-USBL.jpg" style="width: 31%">
 <img src="{{ page.assets }}/DVL1000-4000_4.jpg" style="width: 33%">
 
 </div>
@@ -168,8 +168,8 @@ Inertial/magnetic sensors are the last type of sensor we’ll cover, and their u
 ### Communications
 
 <div style="display: block; text-align:center;">
-<img src="https://www.teledynemarine.com/en-us/products/PublishingImages/UCM_OEM_UCT.jpg" style="width: 20%">
-<img src="https://reachrobotics.com/media/B3-Cutter-Defender.jpg" style="width: 40%">
+<img src="{{page.assets}}UCM_OEM_UCT.jpg" style="width: 20%">
+<img src="{{page.assets}}B3-Cutter-Defender.jpg" style="width: 40%">
 
 </div>
 <div class="caption"> Communications solutions. Left: <a href="https://www.teledynemarine.com/brands/benthos/acoustic-modems">Acoustic modem</a>. Right: <a href="https://reachrobotics.com/products/">Tethered robot</a>.
@@ -180,8 +180,8 @@ Communications is also a unique frontier for the underwater space, to due the ab
 ### Business
 
 <div style="display: block; text-align:center;">
-<img src="https://www.superyachtservicesguide.com/uploads/assets/listings/Sydney%20Superyacht%20Marina/2-Sydney%20Superyacht%20Marina-Callisto%20aerial%20photo%20with%20crane%20and%20fuel.jpeg" style="width: 45%">
-<img src="https://schomberginv.com/img/about/about-img2.jpg" style="width: 36%">
+<img src="{{page.assets}}2-Sydney Superyacht Marina-Callisto aerial photo with crane and fuel.jpeg" style="width: 45%">
+<img src="{{page.assets}}about-img2.jpg" style="width: 36%">
 
 </div>
 <div class="caption"> Business costs. Left: Waterfront property. Right: A fouled (dirty) hull with a cleaned strip..

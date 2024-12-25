@@ -6,7 +6,7 @@ categories: nonlinear optimisation lagrange mathematics sympy gutter
 comments: true
 excerpt: What's the best way to cut a straight line to fit a curve?
 assets: /assets/images/constrained-optimisation-gutter/
-preview-image: "/assets/images/constrained-optimisation-gutter/gutter-photo-lowres.jpeg"
+preview-image: "/assets/images/constrained-optimisation-gutter/result-k2-zoom.png"
 ---
 
 Our garage has a slightly weird, curvy bit of concrete around which needed to fit a piece of straight guttering. Although it could almost be bent into shape, I decided the neatest way to go about it would be to cut 1 or more wedges in the piece of guttering so that it wraps around the concrete nicely.
